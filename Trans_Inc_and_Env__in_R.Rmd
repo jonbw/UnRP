@@ -1,0 +1,27 @@
+---
+title: "transmission, incubation and environment in R"
+author: "Ken Miller, Jon BW"
+date: "8/30/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+An impelementation in R of ["transmission incubation and environment 2.0"](https://www.kaggle.com/mlconsult/transmission-incubation-and-environment-2-0/execution#COVID-19-TASK---1-transmission-incubation-environment-2.0) by Ken Miller, winner of the COVID-19 Open Research Dataset Challenge for [task-1](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks?taskId=568) (What is known about transmission, incubation, and environmental stability?).
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r install packages}
+install.packages(c("MASS","tidyverse","httr","jsonlite"))
+```
+
+```{r load libraries}
+library(MASS)
+library(tidyverse)
+library(httr)
+library(jsonlite)
+```
